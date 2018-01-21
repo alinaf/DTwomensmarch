@@ -1,5 +1,9 @@
 @import url(font-awesome.min.css);
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400";
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700 | Lato');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+
+
 
 /*
 	Stellar by HTML5 UP
@@ -1649,7 +1653,8 @@
 	}
 
 	body, input, select, textarea {
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: "Lato", Helvetica, sans-serif;
+		letter-spacing: 0.5px;
 		font-size: 17pt;
 		font-weight: 300;
 		line-height: 1.65;
@@ -1693,6 +1698,10 @@
 			border-bottom-color: transparent;
 		}
 
+		#header a {
+			border-bottom-color: transparent;
+		}
+
 	strong, b {
 		font-weight: 400;
 	}
@@ -1721,7 +1730,9 @@
 		font-weight: 300;
 		line-height: 1.5;
 		margin: 0 0 0.7em 0;
-		letter-spacing: -0.025em;
+		letter-spacing: 0.03em;
+		font-family: 'Amatic SC', cursive;
+		font-weight: bold;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -1730,12 +1741,12 @@
 		}
 
 	h1 {
-		font-size: 2.5em;
+		font-size: 3em;
 		line-height: 1.2;
 	}
 
 	h2 {
-		font-size: 1.5em;
+		font-size: 2em;
 	}
 
 	h3 {
@@ -2690,7 +2701,7 @@
 
 		header.major p {
 			font-size: 1.25em;
-			letter-spacing: -0.025em;
+			letter-spacing: 1em;
 		}
 
 		header.major.special {
@@ -3104,7 +3115,7 @@
 
 		#header p {
 			font-size: 1.25em;
-			letter-spacing: -0.025em;
+			letter-spacing: 0.05em;
 		}
 
 		#header.alt {
