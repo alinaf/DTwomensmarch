@@ -1729,7 +1729,7 @@
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
 		line-height: 1.5;
-		margin: 0 0 0.7em 0;
+		margin: 0 0 0.2em 0;
 		letter-spacing: 0.03em;
 		font-family: 'Amatic SC', cursive;
 		font-weight: bold;
@@ -1758,7 +1758,9 @@
 	}
 
 	h5 {
+		font-family: Lato, sans-serif;
 		font-size: 0.9em;
+		font-weight: normal;
 	}
 
 	h6 {
@@ -3136,8 +3138,8 @@
 				-ms-transition-delay: 0s;
 				transition-delay: 0s;
 				opacity: 1;
-			}*/
-
+			}
+*/
 			#header.alt .logo {
 				-moz-transition: opacity 1.25s ease, -moz-transform 0.5s ease;
 				-webkit-transition: opacity 1.25s ease, -webkit-transform 0.5s ease;
