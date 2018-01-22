@@ -22,6 +22,10 @@
 		vertical-align: baseline;
 	}
 
+	audio {
+		width: 100%;
+	}
+
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
@@ -1712,6 +1716,7 @@
 
 	p {
 		margin: 0 0 2em 0;
+		text-align: left;
 	}
 
 		p.content {
@@ -2475,6 +2480,11 @@
 			display: block;
 			margin: 0 0 0em 0;
 			width: 100%;
+			text-align: right;
+		}
+
+
+		.image.main p {
 			text-align: right;
 		}
 
