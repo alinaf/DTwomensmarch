@@ -76,133 +76,177 @@
 										<h2>Women's March: the Sequel</h2>
 									</header>
 
-									<div class="w3-content w3-display-container" style="margin-bottom:0; padding-bottom:0;">
-										<img class="mySlides" src="images/flag.jpg" style="width:100%">
-										<img class="mySlides" src="images/poster.jpg" style="width:100%">
-										<img class="mySlides" src="images/rise.jpg" style="width:100%">
-										<img class="mySlides" src="images/safer.jpg" style="width:100%">
-										<br>
-										<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-										<button class="w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-									</div>
+									<!-- Slideshow container -->
+									<div class="slideshow-container">
 
-									<script>
-										var slideIndex = 1;
-										showDivs(slideIndex);
+										<!-- Full-width images with number and caption text -->
+										<div class="mySlides fade">
+										<div class="numbertext">1 / 5</div>
+											<img src="images/flag.jpg" style="width:100%">
+										</div>
 
-										function plusDivs(n) {
-											showDivs(slideIndex += n);
-										}
+										<div class="mySlides fade">
+											<div class="numbertext">2 / 5</div>
+											<img src="images/poster.jpg" style="width:100%">
+										</div>
 
-										function showDivs(n) {
-											var i;
-											var x = document.getElementsByClassName("mySlides");
-											if (n > x.length) {slideIndex = 1}    
-												if (n < 1) {slideIndex = x.length}
-													for (i = 0; i < x.length; i++) {
-														x[i].style.display = "none";  
-													}
-													x[slideIndex-1].style.display = "block";  
-												}
+										<div class="mySlides fade">
+											<div class="numbertext">3 / 5</div>
+											<img src="images/poster1.jpg" style="width:100%">
+										</div>
 
-											</script> <p style="text-align: right; margin-top:-25px; padding-right:5px; font-size: .6em;">
-											Terry Nguyen | Daily Trojan </p>
+										<div class="mySlides fade">
+											<div class="numbertext">4 / 5</div>
+											<img src="images/rise.jpg" style="width:100%">
+										</div>
 
-											<p>While last year’s inaugural march — which drew an estimated 750,000 people — centered on the theme “Hear Our Voice,” this year, the focus shifted to “Hear Our Vote.” Thousands of attendees publicized the hashtag #powertothepolls over social media.<br><br> 
-												Demonstrators marched from Pershing Square to Los Angeles City Hall at 10 a.m, where a number of celebrities gave speeches to the crowds, including actresses Scarlett Johansson, Natalie Portman, Eva Longoria, Olivia Wilde and Viola Davis, who each urged the crowds to keep the momentum of the march going by voting at the midterm elections. 
+										<div class="mySlides fade">
+											<div class="numbertext">5 / 5</div>
+											<img src="images/safer.jpg" style="width:100%">
+										</div>
+										<p style="font-size: .6em; text-align: right; margin-bottom: 0px;">Terry Nguyen | Daily Trojan </p>
 
+										<script type="text/javascript">var slideIndex = 1;
+											showSlides(slideIndex);
 
-											</p>
-											<span class="image main"><img src="images/no-human-720.gif" alt="" />
-												<p style="font-size: .6em;">Jonathon Xue | Daily Trojan </p></span>
+// Next/previous controls
+function plusSlides(n) {
+	showSlides(slideIndex += n);
+}
 
-												</section>
+// Thumbnail image controls
+function currentSlide(n) {
+	showSlides(slideIndex = n);
+}
 
-
-												<!-- Content -->
-												<section id="second" class="main">
-													<header class="major">
-														<h2>Speaking up for #MeToo</h2>
-													</header>
-													<span class="image main"><img src="images/poster1.jpg" alt="" />
-														<p style="font-size: .6em;">Terry Nguyen | Daily Trojan </p></span>
-
-															<p>Some demonstrators found Davis’ speech to be the most impactful. As a sexual assault survivor herself, Davis spoke out about the strength of those who have endured the same experiences she did, encouraging them to use that strength to enact change through voting. <br><br>
-																“I am always introduced as an award-winning actor, but my testimony is one of poverty,” Davis said in her speech. “My testimony is one of being sexually assaulted and very much seeing a childhood that was robbed from me, and I know that every single day when I think of that, I know that the trauma of those events are still with me today. And that’s what drives me to the voting booth.” <br><br></p>
-
-																<span class="image main" style="margin-bottom: 0;"><img src="images/feminism-sign-720.gif" alt="" />
-												<p style="text-align: right; margin-top: 0; font-size: .6em;">Jonathon Xue | Daily Trojan </p></span>
-<p>
-																Davis also spoke about the victims of sex trafficking and how women of color are disproportionately affected by it. According to Davis, 70 percent of victims of sex trafficking are girls of color. She spoke about standing up for the women who could not come forward. <br><br>
-																“I am speaking today, not just for the #MeToo’s, because I was a #MeToo, but when I raise my hand, I am aware of all the women who are still in silence,” Davis said. “The women who are faceless, the women who don’t have the money … and who don’t have the images in our media that gives them a sense of self-worth enough to break their silence that’s rooted in the shame of assault.”<br><br>
-																Vice President of Internal Affairs for the Trojan Advocates for Political Progress Jacob Lind, said that Davis’ speech merged the #MeToo movement with the Women’s March. <br><br>
-																“Her ability to connect things like the #MeToo movement, things almost apolitical in nature, to the political action that was the Women’s March itself … was pretty impressive,” Lind said. “It was emotionally powerful and emotionally resonant as well as being a well put together speech about a very pressing issue.”
-															</p>
-															<span class="image main"><img src="images/run-the-world-720.gif" alt="" />
-																<p style="font-size: .6em;">Jonathon Xue | Daily Trojan </p></span>
-
-															</section>
+function showSlides(n) {
+	var i;
+	var slides = document.getElementsByClassName("mySlides");
+	var dots = document.getElementsByClassName("dot");
+	if (n > slides.length) {slideIndex = 1} 
+		if (n < 1) {slideIndex = slides.length}
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none"; 
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block"; 
+			dots[slideIndex-1].className += " active";
+		}</script>
 
 
+		<!-- Next and previous buttons -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
 
-															<!-- Content -->
-															<section id="third" class="main">
-																<header class="major">
-																	<h2>The march for equality</h2>
-																</header>
-																<span class="image main"><img src="images/girl.jpg" alt="" />
-																	<p style="font-size: .6em;">Terry Nguyen | Daily Trojan </p></span>
+	<!-- The dots/circles -->
+	<div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span> 
+		<span class="dot" onclick="currentSlide(2)"></span> 
+		<span class="dot" onclick="currentSlide(3)"></span> 
+		<span class="dot" onclick="currentSlide(4)"></span> 
+		<span class="dot" onclick="currentSlide(5)"></span> 
+	</div>
+	
 
-																	<p>Danielle Rucker, another demonstrator at the march, pointed out that the fight for equality is particularly challenging for women of color like herself. <br><br>
-																		“I’m out here to support fellow women and just make sure that people are understanding the rights that women have, because we do deserve equality in all aspects of our lives,” Rucker said. “I’m a woman [and] I’m black, so I’m a minority in two areas of my life.”<br><br>
-																		James Lambert Otis, a West Hollywood resident who previously made headlines in October 2016 for taking a sledgehammer to Trump’s star on the Hollywood Walk of Fame, also marched in recognition of this inequality. Sporting a “Black Lives Matter” shirt, Otis marched in opposition of sexual assault and for Trump’s impeachment.<br><br>
-																		At the march, Otis acknowledged acts of civil disobedience and marching as effective ways to create change and to demonstrate support. <br><br>
-																		“I think [marching is] one of the greatest nonviolent means to affect change,” Otis said. <br><br>“So this is showing the whole world, on the day that the government shutdown, there’s a strong majority of women and men who are against Trump, all of his policies, but especially against his hatred against women and his policies against people of color.”
-
-																	</p>
-																	
-
-																		<span class="image main"><img src="images/walking-720.gif" alt="" />
-																			<p style="font-size: .6em;">Jonathon Xue | Daily Trojan </p></span>
-																			<span class="image main"><img src="images/both2.png" alt="" /></span>
-
-																		</section>
+	<p>While last year’s inaugural march — which drew an estimated 750,000 people — centered on the theme “Hear Our Voice,” this year, the focus shifted to “Hear Our Vote.” Thousands of attendees publicized the hashtag #powertothepolls over social media.<br><br> 
+		Demonstrators marched from Pershing Square to Los Angeles City Hall at 10 a.m, where a number of celebrities gave speeches to the crowds, including actresses Scarlett Johansson, Natalie Portman, Eva Longoria, Olivia Wilde and Viola Davis, who each urged the crowds to keep the momentum of the march going by voting at the midterm elections. 
 
 
-																	</div>
+	</p>
+	<span class="image main"><img src="images/no-human-720.gif" alt="" />
+		<p style="font-size: .6em;">Jonathon Xue | Daily Trojan </p></span>
+
+	</section>
+
+
+	<!-- Content -->
+	<section id="second" class="main">
+		<header class="major">
+			<h2>Speaking up for #MeToo</h2>
+		</header>
+		<span class="image main"><img src="images/poster1.jpg" alt="" />
+			<p style="font-size: .6em;">Terry Nguyen | Daily Trojan </p></span>
+
+			<p>Some demonstrators found Davis’ speech to be the most impactful. As a sexual assault survivor herself, Davis spoke out about the strength of those who have endured the same experiences she did, encouraging them to use that strength to enact change through voting. <br><br>
+				“I am always introduced as an award-winning actor, but my testimony is one of poverty,” Davis said in her speech. “My testimony is one of being sexually assaulted and very much seeing a childhood that was robbed from me, and I know that every single day when I think of that, I know that the trauma of those events are still with me today. And that’s what drives me to the voting booth.” <br><br></p>
+
+				<span class="image main" style="margin-bottom: 0;"><img src="images/feminism-sign-720.gif" alt="" />
+					<p style="text-align: right; margin-top: 0; font-size: .6em;">Jonathon Xue | Daily Trojan </p></span>
+					<p>
+						Davis also spoke about the victims of sex trafficking and how women of color are disproportionately affected by it. According to Davis, 70 percent of victims of sex trafficking are girls of color. She spoke about standing up for the women who could not come forward. <br><br>
+						“I am speaking today, not just for the #MeToo’s, because I was a #MeToo, but when I raise my hand, I am aware of all the women who are still in silence,” Davis said. “The women who are faceless, the women who don’t have the money … and who don’t have the images in our media that gives them a sense of self-worth enough to break their silence that’s rooted in the shame of assault.”<br><br>
+						Vice President of Internal Affairs for the Trojan Advocates for Political Progress Jacob Lind, said that Davis’ speech merged the #MeToo movement with the Women’s March. <br><br>
+						“Her ability to connect things like the #MeToo movement, things almost apolitical in nature, to the political action that was the Women’s March itself … was pretty impressive,” Lind said. “It was emotionally powerful and emotionally resonant as well as being a well put together speech about a very pressing issue.”
+					</p>
+					<span class="image main"><img src="images/run-the-world-720.gif" alt="" />
+						<p style="font-size: .6em;">Jonathon Xue | Daily Trojan </p></span>
+
+					</section>
 
 
 
-																	<!-- Footer -->
-																	<footer id="footer">
-																		<div class ="copyright">
-																			<br>
-																			<p style="text-align:center;">PRODUCED BY <br>
+					<!-- Content -->
+					<section id="third" class="main">
+						<header class="major">
+							<h2>The march for equality</h2>
+						</header>
+						<span class="image main"><img src="images/girl.jpg" alt="" />
+							<p style="font-size: .6em;">Terry Nguyen | Daily Trojan </p></span>
 
-																				ALINA ABIDI, Online Projects Editor; 
-																				NAYLEE NAGDA, Design Director <br> EMMA PEPLOW, Editor-in-Chief, JONATHON XUE, Multimedia Editor</p>
-																				<p class="copyright">&copy; University of Southern California | Daily Trojan 2017. All rights reserved. | <a href="http://html5up.net">HTML5 UP</a></p>
+							<p>Danielle Rucker, another demonstrator at the march, pointed out that the fight for equality is particularly challenging for women of color like herself. <br><br>
+								“I’m out here to support fellow women and just make sure that people are understanding the rights that women have, because we do deserve equality in all aspects of our lives,” Rucker said. “I’m a woman [and] I’m black, so I’m a minority in two areas of my life.”<br><br>
+								James Lambert Otis, a West Hollywood resident who previously made headlines in October 2016 for taking a sledgehammer to Trump’s star on the Hollywood Walk of Fame, also marched in recognition of this inequality. Sporting a “Black Lives Matter” shirt, Otis marched in opposition of sexual assault and for Trump’s impeachment.<br><br>
+								At the march, Otis acknowledged acts of civil disobedience and marching as effective ways to create change and to demonstrate support. <br><br>
+								“I think [marching is] one of the greatest nonviolent means to affect change,” Otis said. <br><br>“So this is showing the whole world, on the day that the government shutdown, there’s a strong majority of women and men who are against Trump, all of his policies, but especially against his hatred against women and his policies against people of color.”
 
-																				<ul class="icons">
-																					<li><a href="https://twitter.com/dailytrojan" class="icon fa-twitter" target=_blank><span class="label">Twitter</span></a></li>
-																					<li><a href="https://www.facebook.com/DailyTrojan" class="icon fa-facebook" target=_blank><span class="label">Facebook</span></a></li>
-																					<li><a href="https://www.instagram.com/dailytrojan/" class="icon fa-instagram" target=_blank><span class="label">Instagram</span></a></li>
-																					<li><a href="http://dailytrojan.com/" class="icon fa-dribbble" target=_blank><span class="label" target=_blank>Dribbble</span></a></li>
-																					<li><a href="http://dailytrojan.com/feeds/" class="icon fa-rss" target=_blank><span class="label" target=_blank>RSS</span></a></li>
-																					<li><a href="https://www.youtube.com/user/DailyTrojan" class="icon fa-youtube-play" target=_blank><span class="label" target=_blank>RSS</span></a></li>
-																				</ul>
+							</p>
 
-																			</section>
-																		</footer>
 
-																		<!-- Scripts -->
-																		<script src="assets/js/jquery.min.js"></script>
-																		<script src="assets/js/jquery.scrollex.min.js"></script>
-																		<script src="assets/js/jquery.scrolly.min.js"></script>
-																		<script src="assets/js/skel.min.js"></script>
-																		<script src="assets/js/util.js"></script>
-																		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-																		<script src="assets/js/main.js"></script>
+							<span class="image main"><img src="images/walking-720.gif" alt="" />
+								<p style="font-size: .6em;">Jonathon Xue | Daily Trojan </p></span>
+								<span class="image main"><img src="images/both2.png" alt="" /></span>
 
-																	</body>
-																	</html>
+							</section>
+
+
+						</div>
+
+
+
+						<!-- Footer -->
+						<footer id="footer">
+							<div class ="copyright">
+								<br>
+								<p style="text-align:center;">PRODUCED BY <br>
+
+									ALINA ABIDI, Online Projects Editor; 
+									NAYLEE NAGDA, Design Director <br> EMMA PEPLOW, Editor-in-Chief, JONATHON XUE, Multimedia Editor</p>
+									<p class="copyright">&copy; University of Southern California | Daily Trojan 2017. All rights reserved. | <a href="http://html5up.net">HTML5 UP</a></p>
+
+									<ul class="icons">
+										<li><a href="https://twitter.com/dailytrojan" class="icon fa-twitter" target=_blank><span class="label">Twitter</span></a></li>
+										<li><a href="https://www.facebook.com/DailyTrojan" class="icon fa-facebook" target=_blank><span class="label">Facebook</span></a></li>
+										<li><a href="https://www.instagram.com/dailytrojan/" class="icon fa-instagram" target=_blank><span class="label">Instagram</span></a></li>
+										<li><a href="http://dailytrojan.com/" class="icon fa-dribbble" target=_blank><span class="label" target=_blank>Dribbble</span></a></li>
+										<li><a href="http://dailytrojan.com/feeds/" class="icon fa-rss" target=_blank><span class="label" target=_blank>RSS</span></a></li>
+										<li><a href="https://www.youtube.com/user/DailyTrojan" class="icon fa-youtube-play" target=_blank><span class="label" target=_blank>RSS</span></a></li>
+									</ul>
+
+								</section>
+							</footer>
+
+							<!-- Scripts -->
+							<script src="assets/js/jquery.min.js"></script>
+							<script src="assets/js/jquery.scrollex.min.js"></script>
+							<script src="assets/js/jquery.scrolly.min.js"></script>
+							<script src="assets/js/skel.min.js"></script>
+							<script src="assets/js/util.js"></script>
+							<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+							<script src="assets/js/main.js"></script>
+
+						</body>
+						</html>
